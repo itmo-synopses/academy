@@ -1,4 +1,4 @@
-import {DefaultTheme} from "vitepress";
+import { DefaultTheme } from "vitepress";
 
 export const navigation: DefaultTheme.NavItem[] = [
   {
@@ -7,20 +7,20 @@ export const navigation: DefaultTheme.NavItem[] = [
     items: [
       {
         text: "Архитектура инф. систем",
-        link: "/disciplines/ais/"
+        link: "/disciplines/ais/",
       },
       {
         text: "Базы данных",
-        link: "/disciplines/db/"
-      }
-    ]
+        link: "/disciplines/db/",
+      },
+    ],
   },
   {
     text: "О проекте",
-    link: "/about"
+    link: "/about",
   },
   {
     text: "Гайды",
-    link: "/guides/"
-  }
-]
+    link: "/guides/",
+  },
+];
