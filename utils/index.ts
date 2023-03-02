@@ -18,7 +18,9 @@ export const getLectures = (path: string): DefaultTheme.SidebarItem[] => {
     for (const line of lines) {
       if (line.match(regex)) {
         const markdownHeader = line.match(regex)[0];
-        data.push(line.split(markdownHeader)[1].trim());
+        const index = line.split(" ")[1];
+
+        data.push(`${index} ${line.split(markdownHeader)[1].trim()}`);
       }
     }
   }
